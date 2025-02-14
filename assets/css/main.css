@@ -1268,9 +1268,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# orcamento Section
 --------------------------------------------------------------*/
-.pricing .pricing-tem {
+.orcamento .orcamento-tem {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   padding: 40px 20px;
@@ -1283,46 +1283,46 @@ section,
 }
 
 @media (min-width: 1200px) {
-  .pricing .pricing-tem:hover {
+  .orcamento .orcamento-tem:hover {
     transform: scale(1.1);
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   }
 }
 
-.pricing h3 {
+.orcamento h3 {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.pricing .price {
+.orcamento .orcamento {
   font-size: 36px;
   color: var(--heading-color);
   font-weight: 600;
   font-family: var(--heading-font);
 }
 
-.pricing .price sup {
+.orcamento .orcamento sup {
   font-size: 20px;
   top: -15px;
   left: -3px;
 }
 
-.pricing .price span {
+.orcamento .orcamento span {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
   font-weight: 300;
 }
 
-.pricing .icon {
+.orcamento .icon {
   padding: 20px 0;
 }
 
-.pricing .icon i {
+.orcamento .icon i {
   font-size: 48px;
 }
 
-.pricing ul {
+.orcamento ul {
   padding: 0;
   list-style: none;
   color: var(--default-color);
@@ -1332,16 +1332,16 @@ section,
   margin-bottom: 25px;
 }
 
-.pricing ul li {
+.orcamento ul li {
   padding-bottom: 10px;
 }
 
-.pricing ul .na {
+.orcamento ul .na {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
   text-decoration: line-through;
 }
 
-.pricing .btn-buy {
+.orcamento .btn-buy {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
@@ -1355,12 +1355,12 @@ section,
   border: 1px solid var(--accent-color);
 }
 
-.pricing .btn-buy:hover {
+.orcamento .btn-buy:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.pricing .featured {
+.orcamento .featured {
   width: 200px;
   position: absolute;
   top: 18px;
@@ -2764,4 +2764,29 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 100px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-btn i {
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
 }
