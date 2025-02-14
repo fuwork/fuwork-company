@@ -1,11 +1,3 @@
-/**
-* Template Name: FlexStart
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Updated: Nov 01 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -37,15 +29,40 @@
   }
 
   /**
-   * Hide mobile nav on same-page/hash links
+   * Handle navigation links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+  document.querySelectorAll('a[data-section]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const hash = link.getAttribute('href');
+      const sectionName = link.getAttribute('data-section');
+
+      if (document.querySelector(hash)) {
+        document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+      }
+
+      history.pushState(null, null, `/${sectionName}`);
+
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
     });
+  });
 
+  /**
+   * Handle browser back/forward buttons
+   */
+  window.addEventListener('popstate', () => {
+    const sectionName = window.location.pathname.replace('/', '');
+    const sectionLink = document.querySelector(`a[data-section="${sectionName}"]`);
+
+    if (sectionLink) {
+      const hash = sectionLink.getAttribute('href');
+      if (document.querySelector(hash)) {
+        document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   });
 
   /**
