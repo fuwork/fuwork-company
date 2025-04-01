@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando...</title>
+    <script>
+      // Redireciona para index.html, mantendo a slug como hash
+      var slug = location.pathname;
+      if (slug !== "/") {
+        window.location.replace("/#"+slug);
+      } else {
+        window.location.replace("/");
+      }
+    </script>
+  </head>
+  <body>
+    Redirecionando...
+  </body>
+</html>
