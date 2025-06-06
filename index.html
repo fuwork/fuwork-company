@@ -76,9 +76,9 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 data-aos="fade-up">&#128640; Tecnologia e Inovação para Impulsionar sua Agência</h2>
+            <h2 data-aos="fade-up">&#128640; Tecnologia e Inovação para Impulsionar sua Empresa</h2>
             <p data-aos="fade-up" data-aos-delay="100">Unimos automação, integração e desenvolvimento sob medida para transformar processos em resultados.</p>
-              <p data-aos="fade-up" data-aos-delay="100">Seja mais ágil, eficiente e escalável com um parceiro tech que entende os desafios das agências digitais.</p>
+              <p data-aos="fade-up" data-aos-delay="100">Seja mais ágil, eficiente e escalável com um parceiro tech que entende os seus desafios.</p>
             <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
               <a href="#services" class="btn-get-started">Nossos serviços <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -100,16 +100,16 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3>Sobre nós</h3>
-              <h2>Potencializando Agências com Soluções Inteligentes de Marketing Digital</h2>
+              <h2>Potencializando Empresas com Soluções Inteligentes e Automatizadas</h2>
               <p>
-                Somos uma empresa especializada em criar soluções sob medida para agências de marketing digital que querem ir além. Atuamos como parceiros estratégicos, fornecendo tecnologia, ferramentas e automações que otimizam processos, ampliam resultados e fortalecem a presença digital das marcas.
+                Somos uma empresa especializada em criar soluções sob medida para empresas que querem ir além. Atuamos como parceiros estratégicos, fornecendo tecnologia, ferramentas e automações que otimizam processos, ampliam resultados e fortalecem a presença digital das marcas.
               </p>
               <p>
-                Acreditamos que o marketing digital é uma rede de conexões inteligentes: da análise de dados à criação de conteúdo, do branding à performance em redes sociais. Nossa missão é facilitar essa jornada para as agências, oferecendo soluções práticas, acessíveis e com alto impacto.
+                Acreditamos que a eficiência no atendimento começa com conexões inteligentes: da análise de dados ao acompanhamento de leads, da automação de processos à priorização de demandas reais. Nossa missão é simplificar essa jornada, oferecendo soluções práticas, acessíveis e com alto impacto para otimizar o seu dia a dia.
               </p>
 
               <p>
-                Estamos conectados com o que há de mais atual em publicidade, mídia digital, comportamento de audiência e ferramentas online. Nosso papel é entregar inovação com simplicidade, para que você foque no que realmente importa: resultados.
+                Estamos conectados com o que há de mais atual em tecnologia, comportamento do consumidor e automação de processos. Nosso papel é entregar soluções simples e inteligentes para agilizar seu atendimento, atrair os leads certos e liberar seu tempo para focar no que realmente importa: fazer seu negócio crescer.
               </p>
               <div class="text-center text-lg-start">
               </div>
@@ -439,7 +439,14 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <a href="https://wa.me/5562996903303?text=Olá! Gostaria de saber mais sobre os serviços da Fuwork" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   id="whatsappButton">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -454,6 +461,24 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    // Script para adicionar animação shake ocasional no botão WhatsApp
+    const whatsappButton = document.getElementById('whatsappButton');
+
+    // Função para adicionar shake
+    function shakeButton() {
+      whatsappButton.classList.add('shake');
+        setTimeout(() => {
+        whatsappButton.classList.remove('shake');
+      }, 600);
+    }
+
+    // Shake inicial após 3 segundos
+    setTimeout(shakeButton, 3000);
+
+    // Shake a cada 5 segundos
+    setInterval(shakeButton, 5000);
+  </script>
 
 </body>
 </html>
